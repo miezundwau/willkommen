@@ -60,3 +60,21 @@ Texte stehen direkt in `index.html`, Farben und Layout in `style.css` (Farben ob
 
 Julia Cizek, miez und wau, Denhartener Str. 24, 84367 Tann
 E-Mail: julia.cizek@gmx.at
+## Hosting und Domain
+
+- **Hosting:** GitHub Pages (Branch `main`, Ordner `/ (root)`)
+- **Domain:** miezundwau.com, verwaltet bei netcup (CloudDNS)
+- **HTTPS:** aktiv
+
+DNS-Einträge bei netcup:
+
+| Host | Typ | Ziel |
+|---|---|---|
+| `@` | A | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
+| `www` | CNAME | `miezundwau.github.io` |
+
+**Wichtig:** Die Datei `CNAME` im Hauptverzeichnis muss erhalten bleiben und genau `miezundwau.com` enthalten. Sonst verliert die Seite ihre Domain.
+
+## Seite ändern
+
+Datei im Repository bearbeiten und auf `main` committen. GitHub Pages veröffentlicht die Änderung automatisch, meist nach ein bis zwei Minuten.
